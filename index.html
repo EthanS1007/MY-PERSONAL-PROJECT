@@ -12,15 +12,25 @@
 </head>
 
 <body>
-
-<form class="Login-form"  style=" background-color:red;">
-
-<h3>Sign Up</h3>
-<label>Username</label>
-<input>
+    <svg style="position:absolute;" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M640-80 240-480l400-400 71 71-329 329 329 329-71 71Z"/></svg>
+<main>
+<form class="Login-form"  style=" background-color:white;">
+    <svg class="exit-form " xmlns="http://www.w3.org/2000/svg" height="38" viewBox="0 -960 960 960" width="38"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+<h1 style="border-bottom:2px solid red; padding-bottom:10px;">Sign Up</h1>
+<label class="Login-form-label Username">Username</label><br>
+<input class="Login-form-user-input" type="text" pattern="[A-Za-z0-9]{6-9}" >
 <br>
-<label>Password</label>
-<input>
+<label class="Login-form-label Password" >Password</label>
+<br>
+<input class="Login-form-user-input" type="password" pattern="[0-9]{6}" required>
+<div style="display:none;">
+<br>
+<label class="Login-form-label confirm-password" >Confirm Password</label>
+<br>
+<input class="Login-form-user-input" type="password">
+</div>
+
+<button>Login</button>
 
 </form>
 <!-- Make a nav with buttons on the left , search in the middle, and login on the right -->
@@ -32,6 +42,9 @@
     <a href="#">Explore</a>
     <a href="#">My Collection</a>
     <a href="#">Library</a>
+    <!-- <button>Explore</button>
+    <button>My Collection</button>
+    <button>Library</button> -->
 </div>
 <div class="midNav">
     
@@ -40,7 +53,7 @@
 </div>
 <div class="rightNav">
     <button>Sign Up</button>
-    <button>Login</button>
+    <button class="login">Login</button>
 </div>
 
     </div>
@@ -48,7 +61,7 @@
 <!-- Make a side bar that records the most recent songs listened too -->
 
 
-
+</main>
     <script src="script.js"></script>
 </body>
 

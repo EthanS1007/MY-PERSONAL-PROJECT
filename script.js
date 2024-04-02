@@ -12,9 +12,19 @@ searchBar.addEventListener("focusout", inputUnfocus);
 function inputUnfocus(){
     document.querySelector(".midNav").style.border="none";
     }
-
-    // window.onload= function loginForm(){
-    //     document.querySelector("body").style.backgroundColor="red"
+// Default login form
+    window.onload= function loginForm(){
+        // document.querySelector("body").style.backgroundColor="red"
     
-    //     document.querySelector(".Login-form").style.display="block"
-    // }
+        document.querySelector(".Login-form").style.display="block"
+    }
+    // click login to popUp login form
+    document.querySelector(".login").addEventListener("click", enterLogin)
+     function enterLogin(){
+        document.querySelector(".Login-form").style.display="block"
+    }
+    // Can exit loginform
+    let exitLogin = document.querySelector(".exit-form");
+    exitLogin.onclick = function (){
+        document.querySelector(".Login-form").style.display="none"
+    }
